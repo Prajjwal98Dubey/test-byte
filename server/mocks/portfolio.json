@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "name": "Tata Consultancy Services",
+    "symbol": "TCS",
+    "purchasePrice": 3200,
+    "quantity": 50,
+    "exchange": "NSE",
+    "sector": "Technology",
+    "earningPerShare": 48.2
+  },
+  {
+    "id": "2",
+    "name": "Infosys Limited",
+    "symbol": "INFY",
+    "purchasePrice": 1450,
+    "quantity": 100,
+    "exchange": "NSE",
+    "sector": "Technology",
+    "earningPerShare": 42.5
+  },
+  {
+    "id": "3",
+    "name": "HCL Technologies",
+    "symbol": "HCLTECH",
+    "purchasePrice": 1180,
+    "quantity": 75,
+    "exchange": "NSE",
+    "sector": "Technology",
+    "earningPerShare": 39.7
+  },
+  {
+    "id": "4",
+    "name": "HDFC Bank",
+    "symbol": "HDFCBANK",
+    "purchasePrice": 1520,
+    "quantity": 80,
+    "exchange": "NSE",
+    "sector": "Financials",
+    "earningPerShare": 44.1
+  },
+  {
+    "id": "5",
+    "name": "ICICI Bank",
+    "symbol": "ICICIBANK",
+    "purchasePrice": 890,
+    "quantity": 120,
+    "exchange": "NSE",
+    "sector": "Financials",
+    "earningPerShare": 38.9
+  },
+  {
+    "id": "6",
+    "name": "State Bank of India",
+    "symbol": "SBIN",
+    "purchasePrice": 520,
+    "quantity": 200,
+    "exchange": "NSE",
+    "sector": "Financials",
+    "earningPerShare": 27.4
+  },
+  {
+    "id": "7",
+    "name": "Sun Pharmaceutical",
+    "symbol": "SUNPHARMA",
+    "purchasePrice": 1080,
+    "quantity": 60,
+    "exchange": "NSE",
+    "sector": "Healthcare",
+    "earningPerShare": 31.6
+  },
+  {
+    "id": "8",
+    "name": "Dr. Reddys Laboratories",
+    "symbol": "DRREDDY",
+    "purchasePrice": 4200,
+    "quantity": 25,
+    "exchange": "NSE",
+    "sector": "Healthcare",
+    "earningPerShare": 47.8
+  },
+  {
+    "id": "9",
+    "name": "Reliance Industries",
+    "symbol": "RELIANCE",
+    "purchasePrice": 2450,
+    "quantity": 40,
+    "exchange": "NSE",
+    "sector": "Energy",
+    "earningPerShare": 43.2
+  },
+  {
+    "id": "10",
+    "name": "Oil & Natural Gas Corp",
+    "symbol": "ONGC",
+    "purchasePrice": 165,
+    "quantity": 500,
+    "exchange": "NSE",
+    "sector": "Energy",
+    "earningPerShare": 19.5
+  },
+  {
+    "id": "11",
+    "name": "Hindustan Unilever",
+    "symbol": "HINDUNILVR",
+    "purchasePrice": 2350,
+    "quantity": 30,
+    "exchange": "NSE",
+    "sector": "Consumer Goods",
+    "earningPerShare": 29.7
+  },
+  {
+    "id": "12",
+    "name": "ITC Limited",
+    "symbol": "ITC",
+    "purchasePrice": 420,
+    "quantity": 150,
+    "exchange": "NSE",
+    "sector": "Consumer Goods",
+    "earningPerShare": 21.3
+  }
+]
