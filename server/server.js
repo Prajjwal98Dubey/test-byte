@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import userRouter from "./routes/user.route.js";
+import marketRouter from "./routes/market.route.js";
 
 const app = express();
 
@@ -14,6 +15,7 @@ app.use(
 );
 
 app.use("/api/v1/user", userRouter);
+app.use("/api/v1/market", marketRouter);
 
 app.listen(process.env.PORT || 5000, () =>
   console.log(`server running at ${process.env.PORT || 5000}`)
