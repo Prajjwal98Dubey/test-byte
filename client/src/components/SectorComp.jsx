@@ -17,13 +17,13 @@ const SectorComp = ({ title, data, gainLossReport }) => {
       </div>
       <div className="my-1 flex justify-between items-center py-4 px-4">
         <div>
-          <div className="flex text-gray-500 text-[15px] font-medium">
+          <div className="flex text-gray-500 text-[13px] lg:text-[15px] font-medium">
             <div className="px-1 flex justify-center items-center">₹</div>
             <div className="flex justify-center items-center">
               Total Investment
             </div>
           </div>
-          <div className="px-1 font-bold text-2xl flex justify-center items-center">
+          <div className="px-1 font-bold text-xl lg:text-2xl flex justify-center items-center">
             ₹
             {data
               .reduce(
@@ -35,7 +35,7 @@ const SectorComp = ({ title, data, gainLossReport }) => {
           </div>
         </div>
         <div>
-          <div className="flex text-gray-500 text-[15px] font-medium">
+          <div className="flex text-gray-500 text-[13px] lg:text-[15px] font-medium">
             <div className="px-1 flex justify-center items-center">
               <RiPieChartLine />
             </div>
@@ -43,7 +43,7 @@ const SectorComp = ({ title, data, gainLossReport }) => {
               Present Value
             </div>
           </div>
-          <div className="px-1 font-bold text-2xl flex justify-center items-center">
+          <div className="px-1 font-bold text-xl lg:text-2xl flex justify-center items-center">
             ₹
             {data
               .reduce((acc, current) => current.cmp * current.quantity + acc, 0)
@@ -54,7 +54,7 @@ const SectorComp = ({ title, data, gainLossReport }) => {
       <div className="w-full flex justify-center items-center h-[1px] px-4 my-2">
         <div className="bg-gray-700 w-[97%] h-full"></div>
       </div>
-      <div className="w-full h-[90px] px-4 my-2">
+      <div className="w-full h-[75px] lg:h-[90px] px-4 my-2">
         <div
           className={`w-full h-full rounded-md ${
             gainLossReport["isProfit"] ? "bg-[#192A1F]" : "bg-[#2A1C20]"
@@ -62,7 +62,7 @@ const SectorComp = ({ title, data, gainLossReport }) => {
         >
           <div className="flex px-4">
             <div
-              className={`text-xl font-bold flex justify-center items-center px-1 ${
+              className={` text-lg lg:text-xl font-bold flex justify-center items-center px-1 ${
                 gainLossReport["isProfit"] ? "text-[#33BA27]" : "text-[#D22B24]"
               } `}
             >
@@ -72,7 +72,7 @@ const SectorComp = ({ title, data, gainLossReport }) => {
                 <IoIosTrendingDown />
               )}
             </div>
-            <div className="flex justify-center items-center text-[14px] text-gray-400 font-medium">
+            <div className="flex justify-center items-center text-[12px] lg:text-[14px] text-gray-400 font-medium">
               Total Gain/Loss
             </div>
           </div>
@@ -84,7 +84,7 @@ const SectorComp = ({ title, data, gainLossReport }) => {
             <div className="flex justify-center items-center font-medium">
               ₹{gainLossReport["totalPresentValue"].toLocaleString()}
             </div>
-            <div className="flex justify-end items-center text-[13px]">
+            <div className="flex justify-end items-center text-[11px] lg:text-[13px]">
               ({gainLossReport["percentDiff"]}%)
             </div>
           </div>
@@ -109,7 +109,7 @@ const SectorComp = ({ title, data, gainLossReport }) => {
         </div>
         {data.length > 3 && (
           <div className="w-full h-full flex justify-center items-center">
-            <button className="text-white font-medium flex justify-center items-center bg-blue-500 hover:bg-blue-600 cursor-pointer px-8 py-2 rounded-md">
+            <button className="text-white font-medium flex justify-center items-center bg-blue-500 hover:bg-blue-600 cursor-pointer px-4 lg:px-8 py-2 rounded-md">
               View more
             </button>
           </div>

@@ -23,19 +23,19 @@ const Sector = () => {
     divideInSectors();
   }, [portfolioData]);
   return (
-    <div className="px-8 mt-4 text-white">
-      <div className="text-2xl font-bold flex px-4 ">
+    <div className="px-4 lg:px-8 mt-4 text-white">
+      <div className="text-xl lg:text-2xl font-bold flex justify-center lg:justify-start px-2 lg:px-4 ">
         <div className="flex justify-center items-center px-2">📊</div>
         <div className="flex justify-center items-center">
           Sector Performance
         </div>
       </div>
       {isLoading ? (
-        <div className="flex justify-center items-center text-3xl font-bold text-white">
+        <div className="flex justify-center items-center  text-xl lg:text-3xl font-bold text-white">
           Loading...
         </div>
       ) : (
-        <div className="w-full flex flex-wrap px-6 my-2">
+        <div className="w-full flex flex-wrap  px-3 lg:px-6 my-2">
           {Object.keys(sectorData).map((data) => (
             <div
               key={data}
