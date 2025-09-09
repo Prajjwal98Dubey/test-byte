@@ -1,4 +1,4 @@
-import { use, useState } from "react";
+import { use } from "react";
 import { CiWallet } from "react-icons/ci";
 import { FaRupeeSign } from "react-icons/fa";
 import { FiTarget } from "react-icons/fi";
@@ -8,7 +8,6 @@ import { calculateGainOrLoss } from "../helpers/sector.helpers";
 
 const Overview = () => {
   const { portfolioData } = use(UserContext);
-  const [gainLossReport] = useState(calculateGainOrLoss(portfolioData));
   return (
     <div className="mt-2 px-4 lg:px-14">
       <div className="bg-[#16181E] w-full h-[130px] lg:h-[180px] px-2 lg:px-4 border border-gray-600 rounded-md">
@@ -61,15 +60,22 @@ const Overview = () => {
             </div>
             <div
               className={` ${
-                gainLossReport.isProfit ? "text-green-600" : "text-red-600"
+                calculateGainOrLoss(portfolioData).isProfit
+                  ? "text-green-600"
+                  : "text-red-600"
               } text-[17px] lg:text-[26px] px-3 flex justify-center`}
             >
               <div>
-                <div>₹{gainLossReport.totalPresentValue.toLocaleString()}</div>
+                <div>
+                  ₹
+                  {calculateGainOrLoss(
+                    portfolioData
+                  ).totalPresentValue.toLocaleString()}
+                </div>
                 <div className="text-[10px] lg:text-[12px] flex justify-start px-2 border border-green-500 rounded-[30px] w-fit">
-                  {gainLossReport.isProfit
-                    ? "+" + gainLossReport.percentDiff
-                    : gainLossReport.percentDiff}
+                  {calculateGainOrLoss(portfolioData).isProfit
+                    ? "+" + calculateGainOrLoss(portfolioData).percentDiff
+                    : calculateGainOrLoss(portfolioData).percentDiff}
                   %
                 </div>
               </div>

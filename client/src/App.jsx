@@ -33,7 +33,7 @@ function App() {
       clearInterval(intervalRef.current);
       intervalRef.current = null;
     };
-  }, [isMarketOpen]);
+  }, [isMarketOpen, portfolioData]);
   return (
     <div className="bg-[#0E1015] w-full min-h-screen">
       <Navbar />

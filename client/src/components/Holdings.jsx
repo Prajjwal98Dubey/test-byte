@@ -45,9 +45,6 @@ const Holdings = () => {
               <th className="px-2 lg:px-4 py-3 text-right font-semibold text-[11px] lg:text-[14px]">
                 P/E Ratio
               </th>
-              <th className="px-2 lg:px-4 py-3 text-right font-semibold text-[11px] lg:text-[14px]">
-                Latest Earnings
-              </th>
             </tr>
           </thead>
           <tbody>
@@ -127,9 +124,6 @@ const Holdings = () => {
                   </td>
                   <td className="px-2 lg:px-4 py-3 text-right text-xs font-bold">
                     {(data.cmp / data.earningPerShare).toFixed(2)}
-                  </td>
-                  <td className="px-4 py-3 text-right font-mono text-gray-900">
-                    ₹15,432
                   </td>
                 </tr>
               );
